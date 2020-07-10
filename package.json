@@ -1,0 +1,15 @@
+{
+	"name": "node-red-contrip-converter",
+	"version": "0.0.1",
+	"description": "A converter node from celsius to fahrenheit",
+	"dependencies": {},
+	"keywords": [
+		"node-red",
+		"converter"
+	],
+	"node-red": {
+		"nodes": {
+			"sample": "converter/converter.js"
+		}
+	}
+}

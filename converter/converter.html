@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	RED.nodes.registerType("converter", {
+	category:"converter",
+	color:"#ffaaaa",
+	defaults:{
+		name:{value:""}
+	},
+	inputs:1, 
+	outputs:1,
+	icon:"face.png",
+	label:function(){
+		return this.name || "converter";
+	}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="converter">
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i>
+			Name
+		</label>
+		<input type="text" id="node-input-name" placeholder="Name">
+	</div>
+	<div class="form-row">
+		<label for="node-input-topic"><i class="icon-tag"></i>
+			Topic
+		</label>
+		<input type="text" id="node-input-topic" placeholder="Topic">
+	</div>
+</script>
+<script type="text/x-red" data-help-name="converter">
+	<p>
+		a node that converts celsius temperatures to fahrenheit
+	</p>
+</script>
